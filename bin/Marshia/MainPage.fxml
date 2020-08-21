@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="1132.0" prefWidth="1460.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Marshia.MainPageController">
+   <children>
+      <AnchorPane fx:id="ReturnAnchorpane" layoutX="569.0" layoutY="153.0" prefHeight="524.0" prefWidth="453.0" visible="false">
+         <children>
+            <Label layoutX="60.0" layoutY="24.0" text="Code:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="314.0" text="Size:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="235.0" text="Color:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="56.0" layoutY="90.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="155.0" text="Category:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField layoutX="166.0" layoutY="25.0" prefHeight="25.0" prefWidth="200.0" />
+            <TextField layoutX="166.0" layoutY="156.0" prefWidth="200.0" />
+              <TextField layoutX="166.0" layoutY="91.0" prefWidth="200.0" />
+            <TextField layoutX="166.0" layoutY="236.0" prefWidth="200.0" />
+            <TextField layoutX="166.0" layoutY="315.0" prefWidth="200.0" />
+            <RadioButton fx:id="ReturnRadioButton" layoutX="72.0" layoutY="379.0" mnemonicParsing="false" text="Return">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="DamageRadioButton" layoutX="286.0" layoutY="379.0" mnemonicParsing="false" text="Damage">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <Button layoutX="161.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="131.0" text="Save" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="CustomersAnchorPane" layoutX="284.0" layoutY="144.0" prefHeight="542.0" prefWidth="1023.0" visible="false">
+         <children>
+            <ListView layoutY="32.0" prefHeight="510.0" prefWidth="343.0" />
+            <RadioButton layoutX="384.0" layoutY="511.0" mnemonicParsing="false" text="By Name" />
+            <RadioButton layoutX="489.0" layoutY="511.0" mnemonicParsing="false" text="By Mobile" />
+            <TextField layoutX="591.0" layoutY="507.0" prefHeight="25.0" prefWidth="280.0" />
+            <Button layoutX="897.0" layoutY="507.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Search" />
+            <Label layoutX="132.0" layoutY="-4.0" text="Names">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="386.0" layoutY="38.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="386.0" layoutY="99.0" text="Mobile:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="389.0" layoutY="164.0" text="Address:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="397.0" layoutY="287.0" text="Order Number:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="397.0" layoutY="356.0" text="Prevoius Balance:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="392.0" layoutY="230.0" text="Date:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="398.0" layoutY="425.0" text="Facebook Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox layoutX="897.0" layoutY="24.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Mark as Black">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ReportsAnchorPane" layoutX="301.0" layoutY="138.0" prefHeight="542.0" prefWidth="1001.0" visible="false">
+         <children>
+            <DatePicker fx:id="DateFrom" layoutX="107.0" layoutY="16.0" />
+            <DatePicker fx:id="DateTo" layoutX="330.0" layoutY="16.0" />
+            <Label layoutX="51.0" layoutY="18.0" text="From">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="297.0" layoutY="17.0" text="To">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="570.0" layoutY="16.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="View" />
+            <Label layoutX="851.0" layoutY="515.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="940.0" layoutY="515.0" text="To">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="851.0" layoutY="37.0" prefWidth="150.0" promptText="Select Type" />
+            <TreeTableView layoutX="-1.0" layoutY="61.0" prefHeight="447.0" prefWidth="1000.0">
+              <columns>
+                <TreeTableColumn prefWidth="75.0" text="C1" />
+                <TreeTableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TreeTableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="SellAnchorPane" layoutX="313.0" layoutY="149.0" onKeyPressed="#onEnterAnchorpan" onKeyTyped="#onEnterAnchorpan" prefHeight="560.0" prefWidth="1008.0">
+         <children>
+            <AnchorPane blendMode="SOFT_LIGHT" layoutX="4.0" layoutY="402.0" prefHeight="142.0" prefWidth="1000.0" style="-fx-background-color: white;">
+               <children>
+                  <Button blendMode="EXCLUSION" layoutX="811.0" layoutY="103.0" mnemonicParsing="false" onAction="#Procced" prefHeight="25.0" prefWidth="141.0" style="-: ;" text="Pay" textFill="#030303" />
+                  <Label fx:id="Total" layoutX="890.0" layoutY="8.0" prefHeight="27.0" prefWidth="69.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="Code" layoutX="64.0" layoutY="1.0" prefHeight="25.0" prefWidth="75.0" />
+            <TextField fx:id="Category" layoutX="240.0" layoutY="1.0" onKeyPressed="#Categorysuggestions" onMouseClicked="#Categorysuggestions" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="Name" layoutX="427.0" layoutY="2.0" onKeyPressed="#Namesuggestions" onMouseClicked="#Namesuggestions" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="Color" layoutX="640.0" layoutY="2.0" onKeyPressed="#ColorSuggestions" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="Size" layoutX="839.0" layoutY="1.0" onKeyTyped="#Sizesuggestions" prefHeight="25.0" prefWidth="130.0" />
+            <Label layoutX="14.0" layoutY="5.0" text="Code">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="5.0" text="Category">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="377.0" layoutY="5.0" text="Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="598.0" layoutY="5.0" text="Color">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="805.0" layoutY="5.0" text="Size">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="804.0" layoutY="407.0" prefHeight="20.0" prefWidth="54.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="410.0" text="Customer's Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CSName" layoutX="199.0" layoutY="409.0" prefHeight="25.0" prefWidth="148.0" />
+            <TextField fx:id="PhoneNumber" layoutX="199.0" layoutY="457.0" prefHeight="25.0" prefWidth="148.0" />
+            <TextField fx:id="Address" layoutX="199.0" layoutY="504.0" prefHeight="25.0" prefWidth="148.0" />
+            <TextField fx:id="Discount" layoutX="600.0" layoutY="409.0" prefHeight="25.0" prefWidth="148.0" />
+            <TextField fx:id="PreviousBalance" editable="false" layoutX="600.0" layoutY="457.0" prefHeight="25.0" prefWidth="148.0" />
+            <TextField fx:id="CSFacebookName" layoutX="601.0" layoutY="503.0" prefHeight="25.0" prefWidth="148.0" />
+            <TextField fx:id="Paid" layoutX="858.0" layoutY="456.0" prefHeight="25.0" prefWidth="123.0" />
+            <Label layoutX="14.0" layoutY="458.0" text="Customer's Phone Number">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="390.0" layoutY="411.0" text="Discount">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="390.0" layoutY="459.0" text="Prevoius Balance">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="505.0" text="Customer's Address">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ToggleButton fx:id="Price2" layoutX="89.0" layoutY="43.0" mnemonicParsing="false" onAction="#Sizesuggestions" prefHeight="25.0" prefWidth="89.0" text="Price 2" />
+            <ToggleButton fx:id="Price1" layoutX="1.0" layoutY="43.0" mnemonicParsing="false" onAction="#Sizesuggestions" prefHeight="25.0" prefWidth="89.0" selected="true" text="Price 1" />
+            <Button layoutX="876.0" layoutY="31.0" mnemonicParsing="false" onAction="#onEnterAnchorpan2" prefHeight="25.0" prefWidth="112.0" text="ADD">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="804.0" layoutY="455.0" prefHeight="20.0" prefWidth="54.0" text="Paid">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="RepCheckBox" layoutX="714.0" layoutY="33.0" mnemonicParsing="false" onAction="#CallRepresentative" text="By Representative">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="391.0" layoutY="505.0" text="Customer's Facebook Name">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TableView fx:id="OrdersTableView" layoutX="2.0" layoutY="66.0" prefHeight="334.0" prefWidth="1001.0">
+              <columns>
+                <TableColumn fx:id="code" prefWidth="63.0" text="Code" />
+                <TableColumn fx:id="category" prefWidth="129.0" text="Category" />
+                  <TableColumn fx:id="name" prefWidth="174.0" text="Name" />
+                  <TableColumn fx:id="color" prefWidth="134.0" text="Color" />
+                  <TableColumn fx:id="size" prefWidth="131.0" text="Size" />
+                  <TableColumn fx:id="price" prefWidth="136.0" text="Price" />
+              </columns>
+            </TableView>
+            <Label fx:id="CurrentLabel" layoutX="223.0" layoutY="46.0" prefHeight="20.0" prefWidth="110.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="PriceLabel" layoutX="373.0" layoutY="46.0" onKeyPressed="#onEnterAnchorpan" prefHeight="20.0" prefWidth="89.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Representative" layoutX="523.0" layoutY="31.0" prefHeight="25.0" prefWidth="148.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="WarehouseAnchorPane" focusTraversable="true" layoutX="300.0" layoutY="152.0" prefHeight="516.0" prefWidth="1000.0" visible="false">
+         <children>
+            <TableView layoutX="-2.0" layoutY="35.0" prefHeight="481.0" prefWidth="1001.0">
+              <columns>
+                <TableColumn prefWidth="100.0" text="Code" />
+                <TableColumn prefWidth="100.0" text="Name" />
+                  <TableColumn prefWidth="100.0" text="Category" />
+                  <TableColumn prefWidth="100.0" text="Color" />
+                  <TableColumn prefWidth="100.0" text="Size" />
+                  <TableColumn prefWidth="100.0" text="Sold" />
+                  <TableColumn prefWidth="100.0" text="Damaged" />
+                  <TableColumn prefWidth="100.0" text="Current" />
+                  <TableColumn prefWidth="100.0" text="Price 1" />
+                  <TableColumn prefWidth="100.0" text="Price 2" />
+              </columns>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </TableView>
+            <Button layoutX="232.0" layoutY="8.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" text="Add New Item" />
+            <Button layoutX="115.0" layoutY="8.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" text="Add Old Item" />
+            <Button layoutX="-2.0" layoutY="8.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" text="Expenses" />
+            <Button layoutX="349.0" layoutY="8.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="117.0" text="Return Item" />
+            <ComboBox layoutX="849.0" layoutY="9.0" prefWidth="150.0" promptText="Category" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="RepList" layoutX="14.0" layoutY="113.0" onMousePressed="#RepList" prefHeight="580.0" prefWidth="259.0" />
+      <ToggleButton fx:id="Sell" layoutX="1010.0" layoutY="113.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="25.0" prefWidth="170.0" selected="true" text="Sell" />
+      <ToggleButton fx:id="Warehouse" layoutX="670.0" layoutY="113.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="25.0" prefWidth="170.0" text="Warehouse" />
+      <ToggleButton fx:id="Reports" layoutX="500.0" layoutY="113.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="25.0" prefWidth="170.0" text="Reports" />
+      <ToggleButton fx:id="Customers" layoutX="330.0" layoutY="113.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="25.0" prefWidth="170.0" text="Customers" />
+      <Text blendMode="MULTIPLY" fontSmoothingType="LCD" layoutX="62.0" layoutY="97.0" stroke="#ffed26" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="5.0" text="Marshia">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Text>
+      <ToggleButton fx:id="Return" layoutX="840.0" layoutY="113.0" mnemonicParsing="false" onAction="#PopNoMix" prefHeight="25.0" prefWidth="170.0" text="Returns/Damaged" />
+      <TextField fx:id="OrderID" editable="false" layoutX="1213.0" layoutY="113.0" prefHeight="25.0" prefWidth="101.0" />
+   </children>
+</AnchorPane>
